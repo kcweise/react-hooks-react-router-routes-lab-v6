@@ -8,22 +8,22 @@ const routes = [
   {
     path:"/",
     element:<Home />,
-    //errorElement: <ErrorPage />
   },
   {
     path:"/Actors",
     element: <Actors />,
-   // errorElement: <ErrorPage />
-  },
+  },  
   {
     path:"/Directors",
     element: <Directors />,
-   // errorElement: <ErrorPage />
   },
   {
-    path:"/Movie/:id",
+    path:"/movie/:id",
     element: <Movie />,
-    //errorElement: <ErrorPage />
+  },   
+  {
+    path:"*",
+    element: <ErrorPage />,
   }   
   ];
 
