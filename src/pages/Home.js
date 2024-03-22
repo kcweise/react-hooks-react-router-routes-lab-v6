@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard"
+import NavBar from "../components/NavBar"
 
 function Home() {
 
@@ -21,8 +22,10 @@ function Home() {
   return (
     <>
       <header>
+      <NavBar/>
         <h1>Home Page</h1>
       </header>
+      
       <main>
         {movies.map((movie)=>(
           <MovieCard 
